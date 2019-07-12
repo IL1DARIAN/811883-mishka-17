@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Носов](https://up.htmlacademy.ru/adaptive/17/user/811883).
-* Наставник: [Никита Сигов] (https://up.htmlacademy.ru/adaptive/17/user/crazer).
+* Наставник: [Никита Сигов] (https://htmlacademy.ru/profile/crazer).
 
 ---
 
