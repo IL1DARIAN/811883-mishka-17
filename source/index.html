@@ -10,7 +10,7 @@
         <img class="page-header__logo-image src="img/logotype-mobile.svg" alt="Логотип Mishka">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toogle--image" type="button">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -33,12 +33,12 @@
         </div>
       </nav>
     </header>
-    <main class="page-mane">
-      <h1 class="visually-gidden">Mishka - магазин товаров для дома</h1>
-      <p class="page-mane__slogan">Милые штучки ручной работы для дома</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">Mishka - магазин товаров для дома</h1>
+      <p class="page-main__slogan">Милые штучки ручной работы для дома</p>
       <section class="product">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <ul class="producr__list">
+        <ul class="product__list">
           <li class="product__item">
             <a class="product__image product__image--lamp">Предметы для интерьера</a>
           </li>
@@ -48,7 +48,7 @@
         </ul>
         <div class="product-hit">
           <h3 class="product-hit__title">Вязаные корзинки</h3>
-          <span class="prodact-hit__">Товар недели</span>
+          <span class="prodact-hit__best-product">Товар недели</span>
           <p class="prodact-hit__legend">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех рахмерах.</p>
           <table class="product-hit__table">
             <tr>
@@ -68,28 +68,7 @@
             <img class="product-hit__image" src="img/corf.jpg" alt="Фотографии корзинок">
             <figcaption class="product-hit__price">Цена: 990 руб.</figcaption>
           </figure>
-          <button class="button" type="button">Заказать</button>
-          <form class="buy-form" action="https://echo.htmlacademy.ru" method="get">
-            <p class="buy-form__text">Добавить в корзину</p>
-            <div class="buy-form__radio">
-              <p class="buy-form__legend">Выберите размер:</p>
-              <div class="buy-form__radio">
-                <label>
-                  <input class="buy-form__radiobutton" type="radio" name="knitted baskets" value="S" checked>
-                  S
-                </label>
-                <label>
-                  <input class="buy-form__radiobutton" type="radio" name="knitted baskets" value="M">
-                  M
-                </label>
-                <label>
-                  <input class="buy-form__radiobutton" type="radio" name="knitted baskets" value="L">
-                  L
-                </label>
-              </div>
-            </div>
-            <button class="buy-form__submit" type="submit">Добавить</button>
-          </form>
+          <a class="button" href="#">Заказать</a>
         </div>
       </section>
       <section class="advantages">
@@ -106,7 +85,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__social social">
+      <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
         </li>
@@ -116,7 +95,7 @@
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
         </li>
-      </div>
+      </ul>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/17">
@@ -124,5 +103,26 @@
         </a>
       </div>
     </footer>
+    <form class="buy-form" action="https://echo.htmlacademy.ru" method="get">
+      <p class="buy-form__text">Добавить в корзину</p>
+      <div class="buy-form__radio">
+        <p class="buy-form__legend">Выберите размер:</p>
+        <div class="buy-form__radio">
+          <label>
+            <input class="buy-form__radiobutton" type="radio" name="rabbit" value="S" checked>
+            S
+          </label>
+          <label>
+            <input class="buy-form__radiobutton" type="radio" name="rabbit" value="M">
+            M
+          </label>
+          <label>
+            <input class="buy-form__radiobutton" type="radio" name="rabbit" value="L">
+            L
+          </label>
+        </div>
+      </div>
+      <button class="buy-form__submit" type="submit">Добавить</button>
+    </form>
   </body>
 </html>

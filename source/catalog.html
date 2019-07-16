@@ -10,7 +10,7 @@
         <img class="page-header__logo-image src="img/logotype-mobile.svg" alt="Логотип Mishka">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toogle--image" type="button">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -35,115 +35,50 @@
     </header>
     <main class="catalog-main">
       <h2 class="catalog-main__title">Каталог товаров</h2>
-      <div class="catalog-main__set">
-        <ul class="catalog-main__list">
-          <li class="catalog-main__item catalog-product">
-            <h3 class="catalog-product__title">Зайчик-попрыгайчик</h3>
-            <figure class="catalog-product__promo">
-              <img class="catalog-product__image" src="img/rabbit.jpg" alt="Фото изделия - Зайца">
-              <figcaption class="catalog-product__legend">Рост 30 см, вес 200 г</figcaption>
-            </figure>
-            <div class="catalog-product__price-and-buy">
-              <b class="catalog-product__price">1200 руб.</b>
-              <button class="catalog-product__basket" type="button">
-                <span class="visually-hidden">Купить</span>
-              </button>
-              <form class="buy-form" action="https://echo.htmlacademy.ru" method="get">
-                <p class="buy-form__text">Добавить в корзину</p>
-                <div class="buy-form__radio">
-                  <p class="buy-form__legend">Выберите размер:</p>
-                  <div class="buy-form__radio">
-                    <label>
-                      <input class="buy-form__radiobutton" type="radio" name="rabbit" value="S" checked>
-                      S
-                    </label>
-                    <label>
-                      <input class="buy-form__radiobutton" type="radio" name="rabbit" value="M">
-                      M
-                    </label>
-                    <label>
-                      <input class="buy-form__radiobutton" type="radio" name="rabbit" value="L">
-                      L
-                    </label>
-                  </div>
-                </div>
-                <button class="buy-form__submit" type="submit">Добавить</button>
-              </form>
-            </div>
-          </li>
-          <li class="catalog-main__item catalog-product">
-            <h3 class="catalog-product__title">Корзинка для белья</h3>
-            <figure class="catalog-product__promo">
-              <img class="catalog-product__image" src="img/rabbit.jpg" alt="Фото изделия - Корзинки">
-              <figcaption class="catalog-product__legend">Диаметр 15 см, высота 10 см</figcaption>
-            </figure>
-            <div class="catalog-product__price-and-buy">
-              <b class="catalog-product__price">690 руб.</b>
-              <button class="catalog-product__basket" type="button">
-                <span class="visually-hidden">Купить</span>
-              </button>
-              <form class="buy-form" action="https://echo.htmlacademy.ru" method="get">
-                <p class="buy-form__text">Добавить в корзину</p>
-                <div class="buy-form__radio">
-                  <p class="buy-form__legend">Выберите размер:</p>
-                  <div class="buy-form__radio">
-                    <label>
-                      <input class="buy-form__radiobutton" type="radio" name="baskets" value="S" checked>
-                      S
-                    </label>
-                    <label>
-                      <input class="buy-form__radiobutton" type="radio" name="baskets" value="M">
-                      M
-                    </label>
-                    <label>
-                      <input class="buy-form__radiobutton" type="radio" name="baskets" value="L">
-                      L
-                    </label>
-                  </div>
-                </div>
-                <button class="buy-form__submit" type="submit">Добавить</button>
-              </form>
-            </div>
-          </li>
-          <li class="catalog-main__item catalog-product">
-            <h3 class="catalog-product__title">Большая корзинка для игрушек</h3>
-            <figure class="catalog-product__promo">
-              <img class="catalog-product__image" src="img/rabbit.jpg" alt="Фото изделия - Корзина для игрушек">
-              <figcaption class="catalog-product__legend">Диаметр 30 см, высота 30 см</figcaption>
-            </figure>
-            <div class="catalog-product__price-and-buy">
-              <b class="catalog-product__price">1500 руб.</b>
-              <button class="catalog-product__basket" type="button">
-                <span class="visually-hidden">Купить</span>
-              </button>
-              <form class="buy-form" action="https://echo.htmlacademy.ru" method="get">
-                <p class="buy-form__text">Добавить в корзину</p>
-                <div class="buy-form__radio">
-                  <p class="buy-form__legend">Выберите размер:</p>
-                  <div class="buy-form__radio">
-                    <label>
-                      <input class="buy-form__radiobutton" type="radio" name="toy baskets" value="S" checked>
-                      S
-                    </label>
-                    <label>
-                      <input class="buy-form__radiobutton" type="radio" name="toy baskets" value="M">
-                      M
-                    </label>
-                    <label>
-                      <input class="buy-form__radiobutton" type="radio" name="toy baskets" value="L">
-                      L
-                    </label>
-                  </div>
-                </div>
-                <button class="buy-form__submit" type="submit">Добавить</button>
-              </form>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <ul class="catalog-main__list">
+        <li class="catalog-main__item catalog-product">
+          <h3 class="catalog-product__title">Зайчик-попрыгайчик</h3>
+          <figure class="catalog-product__promo">
+            <img class="catalog-product__image" src="img/rabbit.jpg" alt="Фото изделия - Зайца">
+            <figcaption class="catalog-product__legend">Рост 30 см, вес 200 г</figcaption>
+          </figure>
+          <div class="catalog-product__price-and-buy">
+            <b class="catalog-product__price">1200 руб.</b>
+            <a class="catalog-product__basket" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
+          </div>
+        </li>
+        <li class="catalog-main__item catalog-product">
+          <h3 class="catalog-product__title">Корзинка для белья</h3>
+          <figure class="catalog-product__promo">
+            <img class="catalog-product__image" src="img/rabbit.jpg" alt="Фото изделия - Корзинки">
+            <figcaption class="catalog-product__legend">Диаметр 15 см, высота 10 см</figcaption>
+          </figure>
+          <div class="catalog-product__price-and-buy">
+            <b class="catalog-product__price">690 руб.</b>
+            <a class="catalog-product__basket" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
+          </div>
+        </li>
+        <li class="catalog-main__item catalog-product">
+          <h3 class="catalog-product__title">Большая корзинка для игрушек</h3>
+          <figure class="catalog-product__promo">
+            <img class="catalog-product__image" src="img/rabbit.jpg" alt="Фото изделия - Корзина для игрушек">
+            <figcaption class="catalog-product__legend">Диаметр 30 см, высота 30 см</figcaption>
+          </figure>
+          <div class="catalog-product__price-and-buy">
+            <b class="catalog-product__price">1500 руб.</b>
+            <a class="catalog-product__basket" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
+          </div>
+        </li>
+      </ul>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__social social">
+      <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
         </li>
@@ -153,7 +88,7 @@
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твитере</a>
         </li>
-      </div>
+      </ul>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://up.htmlacademy.ru/adaptive/17">
@@ -161,5 +96,26 @@
         </a>
       </div>
     </footer>
+    <form class="buy-form" action="https://echo.htmlacademy.ru" method="get">
+      <p class="buy-form__text">Добавить в корзину</p>
+      <div class="buy-form__radio">
+        <p class="buy-form__legend">Выберите размер:</p>
+        <div class="buy-form__radio">
+          <label>
+            <input class="buy-form__radiobutton" type="radio" name="rabbit" value="S" checked>
+            S
+          </label>
+          <label>
+            <input class="buy-form__radiobutton" type="radio" name="rabbit" value="M">
+            M
+          </label>
+          <label>
+            <input class="buy-form__radiobutton" type="radio" name="rabbit" value="L">
+            L
+          </label>
+        </div>
+      </div>
+      <button class="buy-form__submit" type="submit">Добавить</button>
+    </form>
   </body>
 </html>
