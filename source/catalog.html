@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image src="img/logotype-mobile.svg" alt="Логотип Mishka">
       </a>
       <nav class="main-nav">
@@ -33,56 +33,49 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Mishka - магазин товаров для дома</h1>
-      <p class="page-main__slogan">Милые штучки ручной работы для дома</p>
-      <section class="product">
-        <h2 class="visually-hidden">Популярные товары</h2>
-        <ul class="product__list">
-          <li class="product__item">
-            <a class="product__image product__image--lamp">Предметы для интерьера</a>
-          </li>
-          <li class="product__item">
-            <a class="product__image product__image--toy">Детские игрушки</a>
-          </li>
-        </ul>
-        <div class="product-hit">
-          <h3 class="product-hit__title">Вязаные корзинки</h3>
-          <span class="prodact-hit__best-product">Товар недели</span>
-          <p class="prodact-hit__legend">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех рахмерах.</p>
-          <table class="product-hit__table">
-            <tr>
-              <td class="product-hit__field">Цвет:</td>
-              <td class="product-hit__value">«Тифани»/серый</td>
-            </tr>
-            <tr>
-              <td class="product-hit__field">Диаметр:</td>
-              <td class="product-hit__value">25 см</td>
-            </tr>
-            <tr>
-              <td class="product-hit__field">Высота:</td>
-              <td class="product-hit__value">15 см</td>
-            </tr>
-          </table>
-          <figure class="product-hit__promo">
-            <img class="product-hit__image" src="img/corf.jpg" alt="Фотографии корзинок">
-            <figcaption class="product-hit__price">Цена: 990 руб.</figcaption>
+    <main class="catalog-main">
+      <h2 class="catalog-main__title">Каталог товаров</h2>
+      <ul class="catalog-main__list">
+        <li class="catalog-main__item catalog-product">
+          <h3 class="catalog-product__title">Зайчик-попрыгайчик</h3>
+          <figure class="catalog-product__promo">
+            <img class="catalog-product__image" src="img/rabbit.jpg" alt="Фото изделия - Зайца">
+            <figcaption class="catalog-product__legend">Рост 30 см, вес 200 г</figcaption>
           </figure>
-          <a class="button" href="#">Заказать</a>
-        </div>
-      </section>
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <p class="advanteges__promo">Коротко о нас:</p>
-        <ul class="adventeges__list">
-          <li class="advanteges__item advanteges__item--flower">Экологически чистые материалы</li>
-          <li class="advanteges__item advanteges__item--bill">Скандинавский стиль по российской цене</li>
-          <li class="advanteges__item advanteges__item--heart">Увеличивает лайки на фотографиях</li>
-          <li class="advanteges__item advanteges__item--clew">Связано вручную с любовью и умилением</li>
-          <li class="advanteges__item advanteges__item--rocket">Поддержка отечественного производителя</li>
-          <li class="advanteges__item advanteges__item--present">Поставляется в подарочной упаковке</li>
-        </ul>
-      </section>
+          <div class="catalog-product__price-and-buy">
+            <b class="catalog-product__price">1200 руб.</b>
+            <a class="catalog-product__basket" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
+          </div>
+        </li>
+        <li class="catalog-main__item catalog-product">
+          <h3 class="catalog-product__title">Корзинка для белья</h3>
+          <figure class="catalog-product__promo">
+            <img class="catalog-product__image" src="img/rabbit.jpg" alt="Фото изделия - Корзинки">
+            <figcaption class="catalog-product__legend">Диаметр 15 см, высота 10 см</figcaption>
+          </figure>
+          <div class="catalog-product__price-and-buy">
+            <b class="catalog-product__price">690 руб.</b>
+            <a class="catalog-product__basket" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
+          </div>
+        </li>
+        <li class="catalog-main__item catalog-product">
+          <h3 class="catalog-product__title">Большая корзинка для игрушек</h3>
+          <figure class="catalog-product__promo">
+            <img class="catalog-product__image" src="img/rabbit.jpg" alt="Фото изделия - Корзина для игрушек">
+            <figcaption class="catalog-product__legend">Диаметр 30 см, высота 30 см</figcaption>
+          </figure>
+          <div class="catalog-product__price-and-buy">
+            <b class="catalog-product__price">1500 руб.</b>
+            <a class="catalog-product__basket" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
+          </div>
+        </li>
+      </ul>
     </main>
     <footer class="page-footer">
       <ul class="page-footer__social social">
