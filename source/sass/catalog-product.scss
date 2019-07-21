@@ -1,0 +1,32 @@
+.catalog-product {
+  margin-bottom: 30px;
+}
+
+.catalog-product__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog-product__promo {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-product__legend {
+  font-family: $font-normal;
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.catalog-product__price {
+  font-family: $font-bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+}

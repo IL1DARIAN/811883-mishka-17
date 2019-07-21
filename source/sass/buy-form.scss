@@ -1,0 +1,60 @@
+.buy-form {
+  margin: 0;
+  padding: 30px 30px 50px 30px;
+
+  font-family: $font-bold;
+}
+
+.buy-form__text {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.buy-form__legend {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  font-family: $font-normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.buy-form__radio {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.buy-form__radio label {
+  display: inline-block;
+  margin: 0;
+  padding: 20px 35px;
+
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: #444444;
+
+  border: 2px solid rgba(68, 68, 68, 0.1);
+}
+
+.buy-form__submit {
+  margin: 0;
+  padding: 20px 82px;
+
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #63d1bb;
+  border: none;
+}
