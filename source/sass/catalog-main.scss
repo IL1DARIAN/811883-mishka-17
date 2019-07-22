@@ -1,0 +1,28 @@
+.catalog-main {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-main__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #f1f1f1;
+}
+
+.catalog-main__list {
+  margin: 0;
+  padding: 30px;
+
+  list-style: none;
+}
+
+.catalog-main__item {
+  margin: 0;
+  padding: 0;
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,24 +14,22 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <form action="https://echo.htmlacademy.ru" method="get">
-                <input type="search" placeholder="Поиск по сайту">
-              </form>
-            </li>
-            <li class="site-list__item">
-              <a>Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <input type="search" placeholder="Поиск по сайту">
+            </form>
+          </li>
+          <li class="site-list__item">
+            <a>Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="catalog-main">
@@ -98,22 +97,20 @@
     </footer>
     <form class="buy-form" action="https://echo.htmlacademy.ru" method="get">
       <p class="buy-form__text">Добавить в корзину</p>
+      <p class="buy-form__legend">Выберите размер:</p>
       <div class="buy-form__radio">
-        <p class="buy-form__legend">Выберите размер:</p>
-        <div class="buy-form__radio">
-          <label>
-            <input class="buy-form__radiobutton" type="radio" name="rabbit" value="S" checked>
-            S
-          </label>
-          <label>
-            <input class="buy-form__radiobutton" type="radio" name="rabbit" value="M">
-            M
-          </label>
-          <label>
-            <input class="buy-form__radiobutton" type="radio" name="rabbit" value="L">
-            L
-          </label>
-        </div>
+        <label>
+          <input class="buy-form__radiobutton" type="radio" name="rabbit" value="S" checked>
+          S
+        </label>
+        <label>
+          <input class="buy-form__radiobutton" type="radio" name="rabbit" value="M">
+          M
+        </label>
+        <label>
+          <input class="buy-form__radiobutton" type="radio" name="rabbit" value="L">
+          L
+        </label>
       </div>
       <button class="buy-form__submit" type="submit">Добавить</button>
     </form>
