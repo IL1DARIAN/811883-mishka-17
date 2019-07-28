@@ -1,5 +1,5 @@
 .product-hit {
-  font-family: $font-normal;
+  font-family: $font;
   margin: 0;
   padding: 30px;
 }
@@ -8,9 +8,10 @@
   margin: 0;
   padding: 0;
 
-  font-family: $font-bold;
+  font-family: $font;
   font-size: 25px;
   line-height: 30px;
+  font-weight: bold;
 }
 
 .product-hit__best-product {
@@ -19,9 +20,10 @@
   margin-bottom: 30px;
   padding: 0;
 
-  font-family: $font-bold;
+  font-family: $font;
   font-size: 17px;
   line-height: 20px;
+  font-weight: bold;
   text-transform: uppercase;
   color: #63d1bb;
 }
@@ -64,9 +66,10 @@
   margin: 0;
   padding: 0;
 
-  font-family: $font-bold;
+  font-family: $font;
   font-size: 17px;
   line-height: 24px;
+  font-weight: bold;
   color: #444444;
 }
 
@@ -77,12 +80,71 @@
   margin-top: 25px;
   padding: 15px 85px;
 
-  font-family: $font-bold;
+  font-family: $font;
   font-size: 17px;
   line-height: 20px;
+  font-weight: bold;
   color: #444444;
   text-decoration: none;
   text-transform: uppercase;
 
   border: 2px solid #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .product-hit {
+    position: relative;
+    padding: 40px 0 55px 0;
+  }
+
+  .product-hit__title {
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product-hit__best-product {
+    position: absolute;
+    top: 50px;
+    right: 28px;
+    width: 70px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .product-hit__legend {
+    width: 285px;
+    margin-bottom: 60px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .product-hit__table {
+    margin-bottom: 110px;
+
+    line-height: 20px;
+  }
+
+  .product-hit__image {
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+  }
+
+  .product-hit__price {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-hit {
+    padding: 115px 0 80px 175px;
+  }
+
+  .product-hit__best-product {
+    top: 125px;
+    left: 47px;
+  }
 }

@@ -2,7 +2,8 @@
   margin: 0;
   padding: 30px;
 
-  font-family: $font-bold;
+  font-family: $font;
+  font-weight: bold;
 }
 
 .advanteges__promo {
@@ -29,4 +30,75 @@
   font-size: 17px;
   line-height: 20px;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .advanteges {
+    width: 668px;
+    margin: 0 auto;
+    padding: 60px 52px;
+  }
+
+  .advanteges__promo {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advanteges__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .advanteges__item {
+    width: 300px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .advanteges__item:first-child {
+    order: 1;
+  }
+
+  .advanteges__item:nth-child(2) {
+    order: 3;
+  }
+
+  .advanteges__item:nth-child(3) {
+    order: 5;
+  }
+
+  .advanteges__item:nth-child(4) {
+    order: 2;
+  }
+
+  .advanteges__item:nth-child(5) {
+    order: 4;
+  }
+
+  .advanteges__item:last-child {
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advanteges {
+    width: 1050px;
+    padding: 70px 50px;
+  }
+
+  .advanteges__promo {
+    margin-left: 175px;
+  }
+
+  .advanteges__list {
+    justify-content: start;
+    margin-left: 175px;
+  }
+
+  .advanteges__item {
+    width: 350px;
+  }
 }

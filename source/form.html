@@ -3,36 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image src="img/logotype-mobile.svg" alt="Логотип Mishka">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <input type="search" placeholder="Поиск по сайту">
-            </form>
-          </li>
-          <li class="site-list__item">
-            <a>Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__container">
+        <nav class="main-nav">
+          <a class="main-nav__logo"  href="index.html">
+            <img class="main-nav__logo-image src="img/logotype-mobile.svg" alt="Логотип Mishka">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user user-list">
+            <li class="user-list__item">
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <input type="search" placeholder="Поиск по сайту">
+              </form>
+            </li>
+            <li class="user-list__item">
+              <a>Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__action action-list">
+            <li class="action-list__item">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="action-list__item">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="main-nav__promo">Бесплатная доставка по России</p>
+        </nav>
+      </div>
     </header>
     <footer class="page-footer">
+      <img class="page-footer__image" src="logo.png" alt="Логотип Mishka">
       <ul class="page-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>

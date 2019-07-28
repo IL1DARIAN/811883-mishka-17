@@ -1,10 +1,12 @@
 .product {
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1px;
 }
 
 .product__list {
-  font-family: $font-bold;
+  font-family: $font;
+  font-weight: bold;
 
   margin: 0;
   padding: 0;
@@ -15,6 +17,7 @@
 .product__item {
   width: 100%;
   margin: 0;
+  margin-top: -1px;
   padding: 0;
 }
 
@@ -23,11 +26,13 @@
   vertical-align: middle;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 30px 27px 30px 29px;
   font-size: 19px;
   line-height: 24px;
   text-decoration: none;
   color: #ffffff;
+
+  box-sizing: border-box;
 
   &--lamp {
     background-color: #63d1bb;
@@ -35,5 +40,28 @@
 
   &--toy {
     background-color: #56c3b2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    width: 668px;
+    padding: 0 52px;
+  }
+
+  .product__list {
+    display: flex;
+  }
+
+  .product__image {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 1050px;
+    padding: 0 50px;
   }
 }
