@@ -1,6 +1,6 @@
 .advanteges {
   margin: 0;
-  padding: 30px;
+  padding: 31px;
 
   font-family: $font;
   font-weight: bold;
@@ -23,6 +23,7 @@
 }
 
 .advanteges__item {
+  width: 250px;
   margin: 0;
   padding: 0;
   padding-top: 80px;
@@ -53,6 +54,7 @@
 
   .advanteges__item {
     width: 300px;
+    padding-top: 110px;
 
     font-size: 20px;
     line-height: 22px;

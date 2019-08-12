@@ -1,9 +1,15 @@
 .buy-form {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 30px 30px 50px 30px;
 
   font-family: $font;
   font-weight: bold;
+
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  box-sizing: border-box;
 }
 
 .buy-form__text {
@@ -14,6 +20,8 @@
   font-size: 25px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .buy-form__legend {
@@ -25,26 +33,65 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+  text-align: center;
 }
 
 .buy-form__radio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
 }
 
 .buy-form__radio label {
+  position: relative;
   display: inline-block;
+  width: 82px;
   margin: 0;
-  padding: 20px 35px;
+  padding: 20px 0;
 
   font-family: $font;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
   color: #444444;
+  text-align: center;
+
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.buy-form__radio input[type="radio"] {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.buy-form__radio input[type="radio"] + .buy-form__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 80px;
+  height: 52px;
 
   border: 2px solid rgba(68, 68, 68, 0.1);
+}
+
+.buy-form__radio input[type="radio"]:checked + .buy-form__indicator {
+  border: 2px solid #63d1bb;
 }
 
 .buy-form__submit {
@@ -60,4 +107,37 @@
 
   background-color: #63d1bb;
   border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .buy-form {
+    width: 566px;
+    padding: 50px 105px 46px 105px;
+  }
+
+  .buy-form__text {
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .buy-form__legend {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  .buy-form__radio label {
+    width: 112px;
+  }
+
+  .buy-form__radio input[type="radio"] + .buy-form__indicator {
+    width: 112px;
+  }
+
+  .buy-form__submit {
+    padding: 20px 131px;
+  }
 }

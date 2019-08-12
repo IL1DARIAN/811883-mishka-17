@@ -1,8 +1,10 @@
 .page-footer {
-  margin: 0 1px;
-  padding: 23px 30px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
 
   background-color: #f1f1f1;
+  box-sizing: border-box;
 }
 
 .page-footer__image {
@@ -10,9 +12,12 @@
 }
 
 .page-footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  margin-bottom: 25px;
-  padding: 0;
+  padding: 25px 0 27px 0;
 
   list-style: none;
   box-shadow: 0 1px 0 0 #cecece;
@@ -24,13 +29,14 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 668px;
+    width: 772px;
     padding: 23px 52px;
     margin: 0 auto;
   }
 
   .page-footer__image {
     display: block;
+    padding-right: 75px;
   }
 
   .page-footer__social {
@@ -41,7 +47,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    width: 1050px;
+    width: 1150px;
     padding: 23px 50px;
   }
 }

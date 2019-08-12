@@ -1,3 +1,10 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0 30px 0;
+}
+
 .copyright__text {
   margin: 0;
   padding: 0;
@@ -7,4 +14,12 @@
   line-height: 18px;
   font-weight: bold;
   color: #000000;
+}
+
+.copyright a {
+  margin-left: 30px;
+}
+
+.copyright svg {
+  fill: #63d1bb;
 }
