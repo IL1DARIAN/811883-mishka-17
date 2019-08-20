@@ -1,9 +1,12 @@
+.page-footer__wrapper {
+  background-color: #f1f1f1;
+}
+
 .page-footer {
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
 
-  background-color: #f1f1f1;
   box-sizing: border-box;
 }
 
@@ -17,7 +20,7 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 25px 0 27px 0;
+  padding: 25px 0 22px 0;
 
   list-style: none;
   box-shadow: 0 1px 0 0 #cecece;
@@ -29,18 +32,22 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 772px;
-    padding: 23px 52px;
+    width: 668px;
+    padding: 0 50px;
     margin: 0 auto;
+    box-sizing: content-box;
   }
 
   .page-footer__image {
-    display: block;
-    padding-right: 75px;
+    display: inline;
+    padding-top: 51px;
+    padding-bottom: 58px;
+    margin-right: 80px;
   }
 
   .page-footer__social {
     margin: 0;
+    padding: 0;
     box-shadow: none;
   }
 }

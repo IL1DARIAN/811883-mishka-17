@@ -2,6 +2,12 @@
   margin-left: 40px;
 
   &:first-child {
-    margin-left: 0;
+    margin-left: -5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-top: 7px;
   }
 }
