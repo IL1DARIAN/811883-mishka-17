@@ -194,11 +194,14 @@
 @media (min-width: $desktop-width) {
   .advanteges {
     width: 1050px;
-    padding: 70px 50px;
+    padding: 60px 50px 89px 50px;
   }
 
   .advanteges__promo {
-    margin-left: 175px;
+    margin-left: 172px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .advanteges__list {
