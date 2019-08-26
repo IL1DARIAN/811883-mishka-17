@@ -1,8 +1,25 @@
 .page-header {
-  font-family: $font;
-  margin: 0;
-  padding: 0 1px;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
 
-  background-color: #ffffff;
+  font-family: $font;
+
   box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  z-index: 2;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 668px;
+    padding: 0 50px;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1050px;
+  }
 }

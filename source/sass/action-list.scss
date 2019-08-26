@@ -1,6 +1,8 @@
 @media (min-width: $desktop-width) {
   .action-list {
     display: flex;
+    flex-wrap: wrap;
+    width: 800px;
     margin: 0;
     padding: 0;
 
@@ -13,8 +15,10 @@
   }
 
   .action-list__item a {
+    display: inline-block;
     margin: 0;
-    padding: 0;
+    margin-right: 62px;
+    padding: 18px 0;
 
     font-style: $font;
     font-size: 15px;

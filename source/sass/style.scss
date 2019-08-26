@@ -1,4 +1,5 @@
 @import "fonts.scss";
+@import "normalize.scss";
 @import "scaffolding.scss";
 @import "variables.scss";
 @import "page-header.scss";
@@ -10,8 +11,12 @@
 @import "product.scss";
 @import "product-hit.scss";
 @import "advanteges.scss";
+@import "reviews.scss";
+@import "contacts.scss";
 @import "page-footer.scss";
 @import "copyright.scss";
 @import "buy-form.scss";
 @import "catalog-main.scss";
 @import "catalog-product.scss";
+@import "catalog-video.scss";
+@import "social.scss";
