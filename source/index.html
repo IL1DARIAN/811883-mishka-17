@@ -11,7 +11,11 @@
       <div class="page-header__container">
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <a class="main-nav__logo">
-            <img class="main-nav__logo-image" width="86" height="35" src="img/logo-mobile.svg" alt="Логотип Mishka">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__logo-image" width="86" height="35" src="img/logo-mobile.svg" alt="Логотип Mishka">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -89,7 +93,11 @@
               </tr>
             </table>
             <div class="product-hit__picture">
-              <img class="product-hit__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фотографии корзинок">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img class="product-hit__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Фотографии корзинок">
+              </picture>
             </div>
             <p class="product-hit__price">Цена: 990 руб.</p>
             <a class="button" href="#">Заказать</a>

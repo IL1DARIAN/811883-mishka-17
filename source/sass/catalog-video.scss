@@ -35,8 +35,21 @@
 }
 
 .catalog-video__image {
+  position: relative;
   width: 100%;
   height: 150px;
+}
+
+.catalog-video__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 102px 78px;
 }
 
 .catalog-video__promo {

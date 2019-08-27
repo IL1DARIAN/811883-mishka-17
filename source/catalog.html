@@ -11,7 +11,11 @@
       <div class="page-header__container">
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <a class="main-nav__logo" href="index.html">
-            <img class="main-nav__logo-image" width="86" height="35" src="img/logo-mobile.svg" alt="Логотип Mishka">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__logo-image" width="86" height="35" src="img/logo-mobile.svg" alt="Логотип Mishka">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -57,7 +61,11 @@
       <ul class="catalog-main__list">
         <li class="catalog-main__item catalog-product">
           <div class="catalog-product__picture">
-            <img class="catalog-product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото изделия - Зайца">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+              <img class="catalog-product__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Фото изделия - Зайца">
+            </picture>
           </div>
           <div class="catalog-product__promo">
             <h3 class="catalog-product__title">Зайчик-попрыгайчик</h3>
@@ -73,7 +81,11 @@
         </li>
         <li class="catalog-main__item catalog-product">
           <div class="catalog-product__picture">
-            <img class="catalog-product__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото изделия - Корзинки">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+              <img class="catalog-product__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Фото изделия - Корзинки">
+            </picture>
           </div>
           <div class="catalog-product__promo">
             <h3 class="catalog-product__title">Корзинка для белья</h3>
@@ -89,7 +101,11 @@
         </li>
         <li class="catalog-main__item catalog-product">
           <div class="catalog-product__picture">
-            <img class="catalog-product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото изделия - Корзина для игрушек">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+              <img class="catalog-product__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Фото изделия - Корзина для игрушек">
+            </picture>
           </div>
           <div class="catalog-product__promo">
             <h3 class="catalog-product__title">Большая корзинка для игрушек</h3>
@@ -107,7 +123,11 @@
       <div class="catalog-video">
         <h3 class="catalog-video__title">Процесс производства</h3>
         <div class="catalog-video__image">
-          <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео с производства">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео с производства">
+          </picture>
         </div>
         <div class="catalog-video__promo">
           <p class="catalog-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
