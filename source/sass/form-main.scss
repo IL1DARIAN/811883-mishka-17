@@ -25,7 +25,6 @@
   padding: 9px 30px 55px 30px;
 
   font-family: $font;
-
 }
 
 .form-main__type {
@@ -87,7 +86,8 @@
   cursor: pointer;
 }
 
-.form-main__radio input[type="radio"], .form-main__checkbox input[type="checkbox"] {
+.form-main__radio input[type="radio"],
+.form-main__checkbox input[type="checkbox"] {
   position: absolute;
 
   width: 1px;
@@ -358,7 +358,7 @@
     width: 166px;
   }
 
-    .form-main__line {
+  .form-main__line {
     margin: 0;
     padding: 0;
 
@@ -477,7 +477,8 @@
     flex-grow: 1;
   }
 
-  .form-main__author label, .form-main__author input {
+  .form-main__author label,
+  .form-main__author input {
     margin: 0;
     padding: 0;
 
@@ -641,7 +642,8 @@
     margin-bottom: 7px;
   }
 
-  .form-main__legend, .form-main__contacts label {
+  .form-main__legend,
+  .form-main__contacts label {
     width: 114px;
     padding-left: 60px;
   }
