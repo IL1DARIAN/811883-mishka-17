@@ -219,9 +219,15 @@
   border-bottom: 2px solid #000000;
 }
 
+.form-main__phone .form-main__legend,
+.form-main__email .form-main__legend {
+  margin-bottom: 17px;
+}
+
 .form-main__phone input {
   width: 100%;
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
   padding-bottom: 13px;
 
@@ -244,6 +250,7 @@
   width: 100%;
   margin: 0;
   margin-top: 5px;
+  margin-bottom: 34px;
   padding: 0;
   padding-bottom: 16px;
 
@@ -520,16 +527,10 @@
     width: 768px;
     padding: 0 50px;
     padding-top: 67px;
-    padding-bottom: 6px;
+    padding-bottom: 16px;
     margin: 0 auto;
 
     box-sizing: border-box;
-  }
-
-  .form-main__contacts label {
-    margin: 0;
-    margin-bottom: 62px;
-    padding: 0;
   }
 
   .form-main__contacts input {
@@ -549,6 +550,7 @@
 
   .form-main__phone {
     display: flex;
+    margin-bottom: 10px;
   }
 
   .form-main__email {
