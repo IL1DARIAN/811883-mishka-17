@@ -23,7 +23,7 @@
   padding: 25px 0 22px 0;
 
   list-style: none;
-  box-shadow: 0 1px 0 0 #cecece;
+  border-bottom: 1px solid #cecece;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,12 +43,26 @@
     padding-top: 51px;
     padding-bottom: 58px;
     margin-right: 80px;
+
+    &:hover {
+      path {
+        fill: #46c1ae;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      path {
+        fill: #46c1ae;
+      }
+    }
   }
 
   .page-footer__social {
     margin: 0;
     padding: 0;
-    box-shadow: none;
+    border-bottom: none;
   }
 }
 

@@ -29,25 +29,11 @@
 }
 
 .product__item {
+  position: relative;
   width: 100%;
   margin: 0;
   margin-top: -1px;
   padding: 0;
-}
-
-.product__image {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  margin: 0;
-  padding: 25px 180px 31px 29px;
-  font-size: 19px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #ffffff;
-
-  box-sizing: border-box;
 
   &--lamp {
     background-color: #63d1bb;
@@ -81,6 +67,45 @@
     background-image: url("../img/icon-toy.svg");
     background-repeat: no-repeat;
     opacity: 0.5;
+  }
+
+  &:hover {
+    padding-bottom: 5px;
+  }
+
+  &--lamp:hover::before {
+    opacity: 0.7;
+  }
+
+  &--toy:hover::before {
+    opacity: 0.7;
+  }
+
+  &--lamp:active::before {
+    opacity: 0.3;
+  }
+
+  &--toy:active::before {
+    opacity: 0.3;
+  }
+}
+
+.product__image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0;
+  padding: 25px 180px 31px 29px;
+  font-size: 19px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #ffffff;
+
+  box-sizing: border-box;
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

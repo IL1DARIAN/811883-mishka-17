@@ -22,8 +22,17 @@
   margin-top: 5px;
 }
 
-.copyright svg {
+.copyright__link svg {
   fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: #46c1ae;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -68,6 +68,15 @@
   background: none;
   border: none;
   box-shadow: inset 1px 1px 0 0 #ececec, 1px 1px 0 0 #ececec;
+  outline: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__write {

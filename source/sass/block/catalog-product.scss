@@ -24,6 +24,15 @@
   line-height: 24px;
   font-weight: bold;
   color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-product__legend {
@@ -61,6 +70,16 @@
 .catalog-product__icon {
   path {
     fill: rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover {
+    path {
+      fill: #63d1bb;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -129,6 +148,14 @@
     width: 316px;
     padding: 24px 30px 26px 28px;
     flex-grow: 1;
+  }
+
+  .catalog-product:hover .catalog-product__promo {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .catalog-product:active .catalog-product__promo {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 
   .catalog-product__title {
