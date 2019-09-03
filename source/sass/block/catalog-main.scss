@@ -44,11 +44,7 @@
   .catalog-main__wrapper {
     margin-top: -58px;
 
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-size: auto 24px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
   }
 
   .catalog-main__title {
@@ -57,6 +53,11 @@
     padding: 95px 50px;
     font-size: 43px;
     line-height: 50px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 24px;
   }
 
   .catalog-main__list {
@@ -73,8 +74,6 @@
 @media (min-width: $desktop-width) {
   .catalog-main__wrapper {
     margin-top: -60px;
-
-    background-size: auto 34px;
   }
 
   .catalog-main__title {
@@ -83,6 +82,8 @@
     padding: 98px 50px 124px 50px;
     font-size: 53px;
     line-geight: 57px;
+
+    background-size: auto 34px;
   }
 
   .catalog-main__list {

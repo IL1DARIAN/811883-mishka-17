@@ -1,10 +1,3 @@
-.product-hit__wrapper {
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: bottom;
-  background-size: auto 6px;
-}
-
 .product-hit {
   width: 320px;
   font-family: $font;
@@ -12,6 +5,10 @@
   padding: 26px 30px 40px 30px;
 
   box-sizing: border-box;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
 }
 
 .product-hit__title {
@@ -117,26 +114,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .product-hit__wrapper {
-    position: relative;
-    margin-top: -16px;
-
-    background-image: url("../img/bg-zigzag-fill.svg"), url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x, repeat-x;
-    background-position: top, bottom;
-    background-size: auto 24px, auto 15px;
-    z-index: 10;
-  }
-
   .product-hit {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -16px;
     display: flex;
     flex-direction: column;
 
     width: 668px;
     position: relative;
     padding: 57px 50px 68px 50px;
-    margin: 0 auto;
+
     box-sizing: content-box;
+    background-image: url("../img/bg-zigzag-fill.svg"), url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x, repeat-x;
+    background-position: top, bottom;
+    background-size: auto 24px, auto 15px;
+    z-index: 10;
   }
 
   .product-hit__promo {
@@ -226,14 +220,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .product-hit__wrapper {
-    margin-top: -21px;
-    background-size: auto 34px, auto 23px;
-  }
-
   .product-hit {
-    width: 1050px;
-    padding: 140px 0 95px 0;
+    width: 1150px;
+    margin-top: -21px;
+    padding: 140px 50px 95px 50px;
+
+    background-size: auto 34px, auto 23px;
+    box-sizing: border-box;
   }
 
   .product-hit__title {

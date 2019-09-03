@@ -1,8 +1,8 @@
-.page-footer__wrapper {
+.page-footer {
   background-color: #f1f1f1;
 }
 
-.page-footer {
+.page-footer__wrapper {
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
@@ -27,7 +27,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +39,7 @@
   }
 
   .page-footer__image {
-    display: inline;
+    display: block;
     padding-top: 51px;
     padding-bottom: 58px;
     margin-right: 80px;
@@ -67,7 +67,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer__wrapper {
     width: 1050px;
     padding: 0 50px;
   }

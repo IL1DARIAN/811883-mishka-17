@@ -1,16 +1,33 @@
 .buy-form {
   display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 199;
+}
+
+.buy-form--open {
+  display: block;
+}
+
+.buy-form__wrapper {
   width: 320px;
   margin: 0 auto;
+  margin-top: 230px;
   padding: 30px 30px 50px 30px;
-
   font-family: $font;
   font-weight: bold;
 
   border: 1px solid #c6c6c6;
+  background-color: #ffffff;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 
   box-sizing: border-box;
+  z-index: 200;
 }
 
 .buy-form__text {
@@ -112,7 +129,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .buy-form {
+  .buy-form__wrapper {
     width: 566px;
     padding: 50px 105px 46px 105px;
   }
